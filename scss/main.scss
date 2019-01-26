@@ -1,4 +1,77 @@
 $primary-color: #21273b;
+$secondary-color: #ddd;
+$third-color: #e8491d;
 body {
+  background-color: $secondary-color;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+//Global
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+//Header
+header {
   background: $primary-color;
+  color: #ffffff;
+  padding-top: 2rem;
+  min-height: 4rem;
+  border-bottom: $third-color 3px solid;
+  .logo {
+    float: left;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding-bottom: 1rem;
+  }
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+      color: #cccccc;
+      font-weight: bold;
+    }
+  }
+
+  li {
+    display: inline;
+    padding: 0 0.8rem 0 0.8rem;
+  }
+
+  #branding {
+    float: left;
+    width: 30%;
+  }
+
+  nav {
+    float: right;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .current {
+    color: $third-color;
+    font-weight: bold;
+  }
+}
+
+//Showcase
+#showcase {
+  min-height: 400px;
+  background: url("../img/showcase.jpg") no-repeat 0 -400px;
+  text-align: center;
+  color: #ffffff;
 }
