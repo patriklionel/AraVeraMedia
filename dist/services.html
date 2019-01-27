@@ -90,7 +90,7 @@
       content="./img/icon/ms-icon-144x144.png"
     />
     <meta name="theme-color" content="#ffffff" />
-    <title>Ára Vera Media | Bienvenidos</title>
+    <title>Ára Vera Media | Servicios</title>
   </head>
   <body>
     <header>
@@ -102,57 +102,79 @@
         </div>
         <nav>
           <ul>
-            <li><a href="index.html" class="current">Inicio</a></li>
+            <li><a href="index.html">Inicio</a></li>
             <li><a href="about.html">Nosotros</a></li>
-            <li><a href="services.html">Servicios</a></li>
+            <li><a href="services.html" class="current">Servicios</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <section id="showcase">
+
+    <section id="main">
       <div class="container">
-        <h1>Affordable Professional Websites</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
-          aliquid.
-        </p>
-      </div>
-    </section>
-    <section id="newsletter">
-      <div class="container">
-        <h1>Subscribe to our newsletter</h1>
-        <form action="#">
-          <input type="email" placeholder="Enter email..." name="" id="" />
-          <button type="submit" class="button1">Subscribe</button>
-        </form>
-      </div>
-    </section>
-    <section id="boxes">
-      <div class="container">
-        <div class="box">
-          <img src="./img/logo_html.png" alt="HTML5" />
-          <h3>HTML5 Markup</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
-            nemo?
-          </p>
-        </div>
-        <div class="box">
-          <img src="./img/logo_css.png" alt="CCS3" />
-          <h3>CSS3 Styling</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
-            nemo?
-          </p>
-        </div>
-        <div class="box">
-          <img src="./img/logo_brush.png" alt="DESIGN" />
-          <h3>Graphic Design</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
-            nemo?
-          </p>
-        </div>
+        <article id="main-col">
+          <h1 class="page-title">Servicios</h1>
+          <ul id="services">
+            <li>
+              <h3>Diseño de Página Web</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Mollitia, magni.
+              </p>
+              <p>Precios: US$ 350,00 - US$ 1.000,00</p>
+            </li>
+            <li>
+              <h3>Mantenimiento de Página Web</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Mollitia, magni.
+              </p>
+              <p>Precios: US$ 100,00 - US$ 500,00 Mensual</p>
+            </li>
+            <li>
+              <h3>Hosting de páginas Web</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Mollitia, magni.
+              </p>
+              <p>Precios: US$ 10,00 mensual</p>
+            </li>
+          </ul>
+        </article>
+
+        <aside id="sidebar">
+          <div class="dark">
+            <h3>Pedí una cotización</h3>
+            <form class="quote" action="#">
+              <div>
+                <label for="">Nombre</label><br />
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Nombre y Apellido"
+                />
+              </div>
+              <div>
+                <label for="">Email</label><br />
+                <input
+                  type="email"
+                  name="Email"
+                  placeholder="ejemplo@ejemplo.com"
+                />
+              </div>
+              <div>
+                <label for="">Mensaje</label><br />
+                <textarea
+                  name="Mensaje"
+                  cols="30"
+                  rows="10"
+                  placeholder="Mensaje"
+                ></textarea>
+              </div>
+              <button class="button1" type="submit">Enviar</button>
+            </form>
+          </div>
+        </aside>
       </div>
     </section>
     <footer><p>Ára Vera Media, Copyright &copy; 2019</p></footer>
