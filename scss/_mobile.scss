@@ -1,0 +1,17 @@
+// Widescreens
+@include mediaXl {
+}
+
+// Desktops & Laptops
+@include mediaLg {
+}
+
+// Tables & Small Laptops
+@include mediaMd {
+}
+
+// Smartphones
+@include mediaSm {
+  header {
+  }
+}

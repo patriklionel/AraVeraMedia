@@ -24,7 +24,7 @@ ul {
   margin-bottom: 0.6rem; }
 
 .button1 {
-  height: 2rem;
+  height: 1.3rem;
   background: #e8491d;
   border: none;
   padding-left: 1rem;
@@ -79,20 +79,22 @@ header {
 #newsletter {
   padding: 1rem;
   color: #ffffff;
-  background-color: #21273b; }
+  background-color: #21273b;
+  min-height: 10vh; }
   #newsletter h1 {
     float: left;
-    width: 40%;
+    width: 50%;
     font-size: 1.2rem; }
   #newsletter form {
     float: right;
     margin-top: 1rem;
-    width: 40%;
-    height: 1.2rem; }
-  #newsletter input[type="email"] {
-    padding: 4px;
+    width: 50%;
     height: 1.2rem;
-    width: 70%; }
+    margin-bottom: 1rem; }
+    #newsletter form input [type="email"] {
+      padding: 0.5rem;
+      height: 1.2rem;
+      width: 90%; }
 
 #boxes {
   margin-top: 20px; }
