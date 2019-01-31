@@ -1,5 +1,23 @@
 // Widescreens
 @include mediaXl {
+  header {
+    nav {
+      font-size: 2.5rem;
+    }
+  }
+  #showcase {
+    h1 {
+      font-size: 4rem;
+    }
+    p {
+      font-size: 2rem;
+    }
+  }
+  #newsletter {
+    h1 {
+      font-size: 3rem;
+    }
+  }
 }
 
 // Desktops & Laptops
@@ -13,5 +31,55 @@
 // Smartphones
 @include mediaSm {
   header {
+    .logo {
+      float: none;
+      padding: 0;
+    }
+    position: fixed;
+    li {
+      padding: 0 0.3rem;
+    }
+    #branding {
+      width: 50%;
+      float: none;
+    }
+    nav {
+      float: none;
+      text-align: center;
+      font-size: 0.9rem;
+      padding-bottom: 0.5rem;
+    }
+  }
+  //Home page
+  #newsletter {
+    padding: 0;
+    min-height: 18vh;
+    text-align: center;
+    width: 100%;
+    h1 {
+      float: none;
+      text-align: center;
+      width: 100%;
+    }
+    form {
+      float: none;
+      width: 100%;
+    }
+  }
+  #boxes {
+    .box {
+      float: none;
+      width: 100%;
+    }
+  }
+  //About page
+  #main-col {
+    float: none;
+    width: 100%;
+    margin-top: 10rem;
+  }
+  #sidebar {
+    float: none;
+    width: 100%;
   }
 }
