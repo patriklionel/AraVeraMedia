@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Webdesign &Webdevelopment",
   "main": "index.js",
-  "homepage": "https://patriklionel.github.io/AraVeraMedia",
+  "homepage": "https://patriklionel.github.io/araveramedia",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
