@@ -10,19 +10,19 @@ $third-color: #e8491d;
 }
 
 @mixin mediaMd {
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 415px) and (max-width: 768px) {
     @content;
   }
 }
 
 @mixin mediaLg {
-  @media screen and (min-width: 769px) and (max-width: 1024px) {
+  @media screen and (min-width: 769px) and (max-width: 1366px) {
     @content;
   }
 }
 
 @mixin mediaXl {
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1367px) {
     @content;
   }
 }

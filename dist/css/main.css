@@ -1,16 +1,17 @@
 @charset "UTF-8";
 body {
-  background-color: #bbb;
+  background-color: #21273b;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
-  margin: 0;
-  padding: 0; }
+  margin: auto;
+  padding: 0;
+  max-width: 1600px;
+  border: solid #bbb 2px; }
 
 .container {
   width: 80%;
   margin: 0 auto;
-  overflow: hidden;
-  max-width: 1360px; }
+  overflow: hidden; }
 
 ul {
   margin: 0;
@@ -97,10 +98,11 @@ header {
       width: 90%; }
 
 #boxes {
+  background-color: #bbb;
   margin-top: 20px; }
   #boxes .box {
     float: left;
-    width: 28%;
+    width: 30%;
     padding: 10px;
     text-align: center; }
     #boxes .box img {
@@ -109,16 +111,29 @@ header {
 #sidebar {
   float: right;
   width: 30%;
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  border: #bbb 2px solid; }
 
 #main-col {
   float: left;
-  width: 65%; }
+  width: 60%;
+  background-color: #bbb;
+  padding: 2rem;
+  margin-top: 1rem; }
   #main-col h1 {
     font-size: 1.5rem; }
 
 #main {
   min-height: calc(100vh - 12rem); }
+
+#main-serv {
+  float: left;
+  width: 60%;
+  background-color: #bbb;
+  padding: 2rem;
+  margin-top: 1rem; }
+  #main-serv h1 {
+    font-size: 1.5rem; }
 
 #services li {
   list-style: none;
@@ -140,7 +155,7 @@ footer {
   text-align: center;
   font-size: 1rem; }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1367px) {
   header nav {
     font-size: 2.5rem; }
   #showcase h1 {
@@ -148,7 +163,38 @@ footer {
   #showcase p {
     font-size: 2rem; }
   #newsletter h1 {
-    font-size: 3rem; } }
+    font-size: 3rem;
+    width: 70%; }
+  #newsletter form {
+    margin-top: 3.5rem;
+    width: 30%;
+    height: 3rem;
+    margin-bottom: 1rem; }
+  #newsletter input [type="email"] {
+    padding: 2rem;
+    height: 3rem;
+    width: 90%; } }
+
+@media screen and (min-width: 769px) and (max-width: 1366px) {
+  nav li {
+    font-size: 1.7rem; }
+  #newsletter h1 {
+    text-align: center;
+    float: none;
+    font-size: 2rem;
+    width: 100%; }
+  #newsletter form {
+    text-align: center;
+    padding: 0;
+    width: 100%; } }
+
+@media screen and (min-width: 415px) and (max-width: 768px) {
+  nav li {
+    font-size: 1.3rem; }
+  #main-col {
+    width: 55%; }
+  #main-serv {
+    width: 55%; } }
 
 @media screen and (max-width: 414px) {
   header {
@@ -157,7 +203,8 @@ footer {
       float: none;
       padding: 0; }
     header li {
-      padding: 0 0.3rem; }
+      padding: 0 0.5rem;
+      font-size: 1rem; }
     header #branding {
       width: 50%;
       float: none; }
@@ -183,8 +230,18 @@ footer {
     width: 100%; }
   #main-col {
     float: none;
-    width: 100%;
+    width: 80%;
     margin-top: 10rem; }
   #sidebar {
     float: none;
-    width: 100%; } }
+    width: 95%; }
+  #main-serv {
+    margin-top: 22vh;
+    float: none;
+    width: 92%;
+    background-color: #bbb;
+    padding: 0.5rem; }
+    #main-serv h1 {
+      font-size: 1.5rem;
+      padding: 0;
+      margin: 3px; } }

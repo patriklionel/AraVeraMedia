@@ -1,18 +1,19 @@
 @import "config";
 
 body {
-  background-color: $secondary-color;
+  background-color: $primary-color;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
-  margin: 0;
+  margin: auto;
   padding: 0;
+  max-width: 1600px;
+  border: solid $secondary-color 2px;
 }
 //Global
 .container {
   width: 80%;
   margin: 0 auto;
   overflow: hidden;
-  max-width: 1360px;
 }
 
 ul {
@@ -131,10 +132,11 @@ header {
 
 //boxes
 #boxes {
+  background-color: $secondary-color;
   margin-top: 20px;
   .box {
     float: left;
-    width: 28%;
+    width: 30%;
     padding: 10px;
     text-align: center;
     img {
@@ -147,19 +149,33 @@ header {
   float: right;
   width: 30%;
   margin-top: 1rem;
+  border: $secondary-color 2px solid;
 }
 
 #main-col {
   float: left;
-  width: 65%;
+  width: 60%;
   h1 {
     font-size: 1.5rem;
   }
+  background-color: $secondary-color;
+  padding: 2rem;
+  margin-top: 1rem;
 }
 
 //Servicios
 #main {
   min-height: calc(100vh - 12rem);
+}
+#main-serv {
+  float: left;
+  width: 60%;
+  h1 {
+    font-size: 1.5rem;
+  }
+  background-color: $secondary-color;
+  padding: 2rem;
+  margin-top: 1rem;
 }
 #services {
   li {

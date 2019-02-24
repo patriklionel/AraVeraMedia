@@ -16,16 +16,58 @@
   #newsletter {
     h1 {
       font-size: 3rem;
+      width: 70%;
+    }
+    form {
+      margin-top: 3.5rem;
+      width: 30%;
+      height: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    input [type="email"] {
+      padding: 2rem;
+      height: 3rem;
+      width: 90%;
     }
   }
 }
 
 // Desktops & Laptops
 @include mediaLg {
+  nav {
+    li {
+      font-size: 1.7rem;
+    }
+  }
+  #newsletter {
+    h1 {
+      text-align: center;
+      float: none;
+      font-size: 2rem;
+      width: 100%;
+    }
+    form {
+      text-align: center;
+      padding: 0;
+      width: 100%;
+    }
+  }
 }
 
 // Tables & Small Laptops
 @include mediaMd {
+  nav {
+    li {
+      font-size: 1.3rem;
+    }
+  }
+  #main-col {
+    width: 55%;
+  }
+  #main-serv {
+    width: 55%;
+  }
 }
 
 // Smartphones
@@ -36,8 +78,10 @@
       padding: 0;
     }
     position: fixed;
+
     li {
-      padding: 0 0.3rem;
+      padding: 0 0.5rem;
+      font-size: 1rem;
     }
     #branding {
       width: 50%;
@@ -75,11 +119,23 @@
   //About page
   #main-col {
     float: none;
-    width: 100%;
+    width: 80%;
     margin-top: 10rem;
   }
   #sidebar {
     float: none;
-    width: 100%;
+    width: 95%;
+  }
+  #main-serv {
+    margin-top: 22vh;
+    float: none;
+    width: 92%;
+    h1 {
+      font-size: 1.5rem;
+      padding: 0;
+      margin: 3px;
+    }
+    background-color: $secondary-color;
+    padding: 0.5rem;
   }
 }
